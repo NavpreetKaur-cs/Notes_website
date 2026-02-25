@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("Screenshot 2026-02-22 193559.png");
+  background-size: cover;       
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.top-nav {
+  background-image: url("WhatsApp Image 2026-02-22 at 6.38.26 PM.jpeg");
+  background-size: cover; 
+  color: #412113;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 5px rgba(136, 16, 16, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.nav-auth button {
+  background: #412113;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-left: 0.6rem;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.nav-auth button:hover {
+  background: #d55c46;
+  transform: translateY(-2px);
+}
+
+
+.login-container {
+  max-width: 480px;              /* increased width */
+  margin: 4rem auto;             /* more spacing from top */
+  background: rgba(255,255,255,0.92);  /* slight glass effect */
+  backdrop-filter: blur(6px);
+  padding: 3rem;                 /* more padding */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #d55c46;
+  font-size: 2rem;               /* bigger heading */
+}
+
+
+.form-group {
+  margin-bottom: 1.3rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #742d0a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.9rem;               /* bigger inputs */
+  border: 1px solid #e6b66eaf;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #d55c46;
+  box-shadow: 0 0 0 3px rgba(213,92,70,0.15);
+  outline: none;
+}
+
+
+button[type="submit"] {
+  width: 100%;
+  background: #d55c46;
+  border: none;
+  padding: 1rem;                 /* bigger button */
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #742d0a;
+  transform: translateY(-2px);
+}
+
+
+.login-container p {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.login-container a {
+  color: #d55c46;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-container a:hover {
+  color: #742d0a;
+}
+
+#message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #e74c3c;
+}
+
+
+@media (max-width: 500px) {
+  .login-container {
+    margin: 2rem 1rem;
+    padding: 2rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.6rem;
+  }
+}
