@@ -215,7 +215,6 @@ button[type="submit"]:active {
   to { opacity: 1; }
 }
 
-/*add button at bottom*/
 .floating-add {
   position: fixed;
   bottom: 2rem;
@@ -236,26 +235,7 @@ button[type="submit"]:active {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .dashboard-flex {
-    flex-direction: column;
-  }
 
-  .left-panel {
-    max-height: none;
-    overflow-y: visible;
-    border-bottom: 2px solid #541a0c;
-    padding-bottom: 1rem;
-  }
-
-  .right-panel {
-    padding-top: 1rem;
-  }
-
-  #notesList {
-    grid-template-columns: 1fr;
-  }
-}
 .dark-theme {
   background-image: url("IMG_20260222_183602.jpg"); 
   background-size: cover;
@@ -329,4 +309,125 @@ button[type="submit"]:active {
   background: #1e1e1e;
   color: white;
   border: 1px solid #ff8a65;
+}
+/* for phone screen ( mobile ui)*/
+
+@media (max-width: 768px) {
+
+  body {
+    background-attachment: scroll;
+    font-size: 14px;
+  }
+
+  .dashboard-container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .dashboard-flex {
+    flex-direction: column;
+    align-items: center;  
+    gap: 1.5rem;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    max-width: 500px;  
+    padding: 1.3rem;
+    border-radius: 18px;
+  }
+
+  .left-panel {
+    max-height: none;
+    overflow: visible;
+  }
+
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    text-align: center;
+  }
+
+  .nav-brand h2 {
+    font-size: 1.5rem;
+  }
+
+  .nav-auth {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-auth button {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+
+  input[type="text"],
+  textarea {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  #searchInput {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  #notesList {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  #notesList li {
+    padding: 1.1rem;
+    border-radius: 18px;
+  }
+
+  #notesList h3 {
+    font-size: 1rem;
+  }
+
+  #notesList p {
+    font-size: 0.85rem;
+  }
+
+  .note-created,
+  .note-updated {
+    font-size: 0.7rem;
+  }
+
+  .floating-add {
+    width: 55px;
+    height: 55px;
+    font-size: 1.7rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 999;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .left-panel,
+  .right-panel {
+    padding: 1rem;
+  }
+
+  #notesList li {
+    padding: 0.9rem;
+  }
+
 }
