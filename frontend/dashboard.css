@@ -263,7 +263,7 @@ button[type="submit"]:active {
 .dark-theme .top-nav {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)),
               url("WhatsApp Image 2026-02-22 at 6.38.26 PM.jpeg") center/cover no-repeat;
-  color:  #541a0c;
+  color:  white;
 }
 
 .dark-theme input,
